@@ -1,0 +1,46 @@
+@import "_variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    height: 615px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    height: 780px;
+    background: url(/img/pins.svg) no-repeat center center;
+    background-size: cover;
+
+    &__motto{
+        text-transform: uppercase;
+        color: white;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 30px;
+
+        &-haslo{
+            color:$maincolor;
+        }
+    }
+
+    &__list{
+        width: 700px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto;
+
+        &-item{
+            
+            
+        }
+    }
+}

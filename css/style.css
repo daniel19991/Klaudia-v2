@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logo {
+  height: 615px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  height: 780px;
+  background: url(/img/pins.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.menu__motto {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.menu__motto-haslo {
+  color: #E31E24;
+}
+
+.menu__list {
+  width: 700px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px auto;
+}
+/*# sourceMappingURL=style.css.map */
