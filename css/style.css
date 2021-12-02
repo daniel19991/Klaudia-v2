@@ -1,8 +1,69 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title, .about__name, .offer__item-header, .price__item-header {
+  color: #E31E24;
+  text-transform: uppercase;
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 35px;
+  background-color: #E31E24;
+  color: white;
+  font-size: 30px;
+  border-radius: 40px;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #E31E24;
+  border: 1px solid #E31E24;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.section {
+  background-color: #fafafc;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+
+.break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo {
@@ -20,11 +81,11 @@
 
 .menu {
   height: 780px;
-  background: url(/img/pins.svg) no-repeat center center;
+  background: url(/img/pins.svg) no-repeat center bottom;
   background-size: cover;
 }
 
-.menu__motto {
+.menu__motto, .bgimg__motto {
   text-transform: uppercase;
   color: white;
   font-size: 60px;
@@ -32,8 +93,9 @@
   padding-top: 30px;
 }
 
-.menu__motto-haslo {
+.menu__motto-haslo, .bgimg__motto-haslo {
   color: #E31E24;
+  font-family: "Caveat Brush", sans-serif;
 }
 
 .menu__list {
@@ -46,5 +108,126 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 40px auto;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  -webkit-transition: border-bottom 7s ease-in;
+  transition: border-bottom 7s ease-in;
+}
+
+.menu__link:hover {
+  color: #E31E24;
+  border-bottom: 1px solid #E31E24;
+}
+
+.about {
+  margin: 0 auto;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about__half {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__img {
+  width: 270px;
+  height: 510px;
+}
+
+.about__name {
+  font-size: 48px;
+  margin: 0;
+}
+
+.bgimg {
+  height: 980px;
+  background: url(/img/pins2.svg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bgimg__motto {
+  font-size: 250px;
+  padding-top: 10%;
+}
+
+.offer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer__item {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.offer__item-img {
+  width: 325px;
+  height: 325px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.offer__item-header, .price__item-header {
+  font-size: 24px;
+  margin: 20px 0;
+  height: 40px;
+}
+
+.price__item-header {
+  margin-bottom: 0px;
+}
+
+.price__item-description {
+  text-align: center;
+}
+
+.contact__data {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.contact__box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

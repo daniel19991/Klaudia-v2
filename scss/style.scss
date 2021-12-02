@@ -1,9 +1,11 @@
 @import "_variables.scss";
+@import "global";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $normal_font;
 }
 
 
@@ -16,7 +18,7 @@
 
 .menu{
     height: 780px;
-    background: url(/img/pins.svg) no-repeat center center;
+    background: url(/img/pins.svg) no-repeat center bottom;
     background-size: cover;
 
     &__motto{
@@ -28,6 +30,7 @@
 
         &-haslo{
             color:$maincolor;
+            font-family: $special_font;
         }
     }
 
@@ -37,10 +40,121 @@
         display: flex;
         justify-content: space-between;
         margin: 40px auto;
-
-        &-item{
-            
+    }
+    &__link{
+            text-transform: uppercase;
+            text-decoration: none;
+            color:white;
+            font-size: 30px;
+            transition: border-bottom 7s ease-in;
+        &:hover{
+            color: $maincolor;
+            border-bottom: 1px solid $maincolor;
             
         }
     }
+}
+
+.about{
+    margin: 0 auto;
+    &__container{
+    display: flex;
+    justify-content: space-around;
+    
+    }
+    &__half{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        width: 270px;
+        height: 510px;
+    }
+
+    &__name{
+        @extend .title;
+        font-size: $desc_size;
+        margin: 0;
+    }
+
+    //button w pliku __global.scss
+
+}
+
+.bgimg{
+    height: 980px;
+    background: url(/img/pins2.svg) no-repeat center center fixed;
+    background-size: cover;
+    &__motto{
+        @extend .menu__motto;
+        font-size: 250px;
+        padding-top: 10%;
+
+        &-haslo{
+            @extend .menu__motto-haslo;
+        }
+    }
+}
+
+.offer{
+
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+
+    &__item-img{
+        width: 325px;
+        height: 325px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__item-header{
+        @extend .title;
+        font-size: 24px;
+        margin: 20px 0;
+        height: 40px;
+    }
+
+    
+}
+
+.price{
+
+    &__item-header{
+        @extend .offer__item-header;
+        margin-bottom: 0px;
+    }
+
+    &__item-description{
+        text-align:center;
+    
+    }
+}
+
+
+.contact{
+
+    &__data{
+        flex-flow: column wrap;
+    }
+
+    &__box{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
 }
