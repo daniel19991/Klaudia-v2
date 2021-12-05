@@ -164,5 +164,47 @@
     </div>
   </section>
 </body>
+<script type="module">
 
+  // Import the functions you need from the SDKs you need
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  // Your web app's Firebase configuration
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyBamfd9nte8VY9xI-YmcdfhpA4mv0a7fBo",
+
+    authDomain: "fizjo-strefa.firebaseapp.com",
+
+    projectId: "fizjo-strefa",
+
+    storageBucket: "fizjo-strefa.appspot.com",
+
+    messagingSenderId: "465427941887",
+
+    appId: "1:465427941887:web:a59a07d9bc506af78fffca",
+
+    measurementId: "G-JGPQ84ZK8J"
+
+  };
+
+
+  // Initialize Firebase
+
+  const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+
+</script>
 </html>
