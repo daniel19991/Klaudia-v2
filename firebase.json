@@ -1,7 +1,9 @@
 {
-  "hosting": {    
-    "site": "fizjo-strefa",
-    "public": "/",
+  "hosting": {
+    "public":
+         "/",
+
+     
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -9,7 +11,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+         "source": "**/!(*.css|*.js|*.map|*.jpg|*.gif|*.png|*.php)",
         "destination": "/index.html"
       }
     ]
