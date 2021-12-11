@@ -1,11 +1,5 @@
 {
   "hosting": {
-    "headers": [
-      {
-        "key": "strict-transport-security",
-        "value": "max-age=31536000; includeSubDomains; preload"
-      }
-    ]
     "public":
          "/",
        
@@ -17,7 +11,7 @@
     ],
     "rewrites": [
       {
-         "source": "**/!(*.css|*.js|*.map|*.jpg|*.gif|*.png|*.php)",
+         "source": "**/!(*.css|*.js|*.map|*.jpg|*.gif|*.png|*.php|*.svg)",
         "destination": "/index.html"
       }
     ]
