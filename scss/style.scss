@@ -15,189 +15,200 @@
     justify-content: center;
     align-items: center;
 
-    &__img{
-        height: 30%;
-    }
-}
-
-.menu {
-    height: 780px;
-    background: url(/img/pins.png) no-repeat center bottom;
-    background-size: cover;
-
-    &__motto {
-        text-transform: uppercase;
-        color: white;
-        font-size: 60px;
-        text-align: center;
-        padding-top: 30px;
-
-        &-haslo {
-            color: $maincolor;
-            font-family: $special_font;
+    @media only screen and (max-width: 480px) {
+        &{
+            height: 300px;
         }
-    }
-
-    &__list {
-        width: 700px;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        margin: 40px auto;
-    }
-
-    &__link {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-        transition: border-bottom 7s ease-in;
-
-        &:hover {
-            color: $maincolor;
-            border-bottom: 1px solid $maincolor;
-
+        &__img {
+            width: 95%;
         }
-    }
-}
+    }}
 
-.about {
-    margin: 0 auto;
+    .menu {
+        height: 780px;
+        background: url(/img/pins.png) no-repeat center bottom;
+        background-size: cover;
 
-    &__container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        flex-direction: row;
+        &__motto {
+            text-transform: uppercase;
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            padding-top: 30px;
 
-    }
+            &-haslo {
+                color: $maincolor;
+                font-family: $special_font;
+            }
+        }
 
-    &__half {
-        flex-basis: 35%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        &__list {
+            width: 700px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 40px auto;
+        }
 
-    &__img {
-        width: 270px;
-        height: 510px;
-    }
+        &__link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            transition: border-bottom 7s ease-in;
 
-    &__name {
-        @extend .title;
-        font-size: $desc_size;
-        margin: 0;
-    }
-
-    //button w pliku __global.scss
-
-}
-
-.bgimg {
-    height: 980px;
-    background: url(/img/pins2.png) no-repeat center center fixed;
-    background-size: cover;
-
-    &__motto {
-        @extend .menu__motto;
-        font-size: 250px;
-        padding-top: 10%;
-
-        @media only screen and (max-width: 480px) {
-            & {display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 50px;
+            &:hover {
+                color: $maincolor;
+                border-bottom: 1px solid $maincolor;
 
             }
-          }
-        &-haslo {
-            @extend .menu__motto-haslo;
         }
     }
-}
 
-.offer {
+    .about {
+        margin: 0 auto;
 
-   
+        &__container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+
+        &__half {
+            flex-basis: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__img {
+            width: 270px;
+            height: 510px;
+        }
+
+        &__name {
+            @extend .title;
+            font-size: $desc_size;
+            margin: 0;
+        }
+
+        //button w pliku __global.scss
+
+    }
+
+    .bgimg {
+        height: 980px;
+        background: url(/img/pins2.png) no-repeat center center fixed;
+        background-size: cover;
+
+        &__motto {
+            @extend .menu__motto;
+            font-size: 250px;
+            padding-top: 10%;
+
+            @media only screen and (max-width: 480px) {
+                & {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 50px;
+
+                }
+            }
+
+            &-haslo {
+                @extend .menu__motto-haslo;
+            }
+        }
+    }
+
+    .offer {
+
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-    &__item {
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            flex-basis: 30%;
+
+        }
+
+        &__item-img {
+            width: 325px;
+            height: 325px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &__item-header {
+            @extend .title;
+            font-size: 24px;
+            margin: 20px 0;
+            height: 40px;
+            flex-basis: 100%;
+        }
+
+        &__title {
+            flex-basis: 100%;
+        }
+
+    }
+
+    .price {
+
+        &__item-header {
+            @extend .offer__item-header;
+            margin-bottom: 0px;
+        }
+
+        &__item-description {
+            text-align: center;
+
+        }
+    }
+
+
+    .contact {
         display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        flex-basis: 30%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
+        &__title {
+            flex-basis: 100%;
+        }
+
+        &__data-header {
+            flex-basis: 100%;
+            @extend .offer__item-header;
+            margin: 0;
+        }
+
+        &__data-description {
+            flex-basis: 100%;
+        }
+
+        &__map {
+            display: block;
+            margin-left: 50px;
+        }
     }
 
-    &__item-img {
-        width: 325px;
-        height: 325px;
-        text-align: center;
-        margin: 0 auto;
+    @media only screen and (max-width: 480px) {
+        .contact__map {
+            margin: 0;
+        }
+
+        iframe {
+            width: 400px;
+            height: 520px;
+            margin: 0;
+        }
     }
-
-    &__item-header {
-        @extend .title;
-        font-size: 24px;
-        margin: 20px 0;
-        height: 40px;
-        flex-basis: 100%;
-    }
-    &__title{
-        flex-basis: 100%;
-    }
-
-}
-
-.price {
-
-    &__item-header {
-        @extend .offer__item-header;
-        margin-bottom: 0px;
-    }
-
-    &__item-description {
-        text-align: center;
-
-    }
-}
-
-
-.contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    &__title {
-        flex-basis: 100%;
-    }
-
-    &__data-header {
-        flex-basis: 100%;
-        @extend .offer__item-header;
-        margin: 0;
-    }
-
-    &__data-description {
-        flex-basis: 100%;
-    }
-
-    &__map {
-        display: block;
-        margin-left: 50px;
-    }
-}
-@media only screen and (max-width: 480px) {
-    .contact__map{
-        margin: 0;
-    }
-iframe{
-    width:400px;
-    height:520px;
-    margin: 0;
-}}

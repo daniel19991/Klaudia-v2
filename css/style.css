@@ -79,8 +79,13 @@
           align-items: center;
 }
 
-.logo__img {
-  height: 30%;
+@media only screen and (max-width: 480px) {
+  .logo {
+    height: 300px;
+  }
+  .logo__img {
+    width: 95%;
+  }
 }
 
 .menu {
