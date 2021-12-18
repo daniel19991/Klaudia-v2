@@ -10,31 +10,70 @@
 
 
 .logo {
-    height: 615px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: 0 auto;
+    flex-direction: column;
+    
+    
+    &__img{
+        display: block;
+        height: 85%;
+        margin: 0 auto;
+        flex-basis:75%;
+    }
+
+    &__menu {
+        width: 550px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 25%;
+    }
+
+    &__menu-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: red;
+        font-size: 18px;
+        transition: border-bottom 7s ease-in;
+
+        &:hover {
+            color: $maincolor;
+            border-bottom: 1px solid $maincolor;
+
+        }
+    }
 
     @media only screen and (max-width: 480px) {
-        &{
-            height: 300px;
+        .logo{
+            height: 200px;
+            width: 480px;
+            size: 0.8;
+            &__menu {
+            display:none;
+            }
         }
-        &__img {
-            width: 95%;
+        .logo__img {
+            scale: 0.7;
         }
     }}
 
     .menu {
-        height: 780px;
-        background: url(/img/pins.png) no-repeat center bottom;
+        height: 500px;
+        background: url(/img/pins.png) no-repeat center bottom fixed;
         background-size: cover;
 
         &__motto {
             text-transform: uppercase;
             color: white;
-            font-size: 60px;
+            font-size: 100px;
             text-align: center;
-            padding-top: 30px;
+            padding-top: 120px;
 
             &-haslo {
                 color: $maincolor;
@@ -42,27 +81,7 @@
             }
         }
 
-        &__list {
-            width: 700px;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            margin: 40px auto;
-        }
-
-        &__link {
-            text-transform: uppercase;
-            text-decoration: none;
-            color: white;
-            font-size: 30px;
-            transition: border-bottom 7s ease-in;
-
-            &:hover {
-                color: $maincolor;
-                border-bottom: 1px solid $maincolor;
-
-            }
-        }
+        
     }
 
     .about {
@@ -212,3 +231,5 @@
             margin: 0;
         }
     }
+
+  

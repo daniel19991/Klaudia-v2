@@ -67,7 +67,7 @@
 }
 
 .logo {
-  height: 615px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,38 +77,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media only screen and (max-width: 480px) {
-  .logo {
-    height: 300px;
-  }
-  .logo__img {
-    width: 95%;
-  }
+.logo__img {
+  display: block;
+  height: 85%;
+  margin: 0 auto;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
 }
 
-.menu {
-  height: 780px;
-  background: url(/img/pins.png) no-repeat center bottom;
-  background-size: cover;
-}
-
-.menu__motto, .bgimg__motto {
-  text-transform: uppercase;
-  color: white;
-  font-size: 60px;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.menu__motto-haslo, .bgimg__motto-haslo {
-  color: #E31E24;
-  font-family: "Caveat Brush", sans-serif;
-}
-
-.menu__list {
-  width: 700px;
+.logo__menu {
+  width: 550px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,21 +105,55 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px auto;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 
-.menu__link {
+.logo__menu-link {
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
-  font-size: 30px;
+  color: red;
+  font-size: 18px;
   -webkit-transition: border-bottom 7s ease-in;
   transition: border-bottom 7s ease-in;
 }
 
-.menu__link:hover {
+.logo__menu-link:hover {
   color: #E31E24;
   border-bottom: 1px solid #E31E24;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo .logo {
+    height: 200px;
+    width: 480px;
+    size: 0.8;
+  }
+  .logo .logo__menu {
+    display: none;
+  }
+  .logo .logo__img {
+    scale: 0.7;
+  }
+}
+
+.menu {
+  height: 500px;
+  background: url(/img/pins.png) no-repeat center bottom fixed;
+  background-size: cover;
+}
+
+.menu__motto, .bgimg__motto {
+  text-transform: uppercase;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.menu__motto-haslo, .bgimg__motto-haslo {
+  color: #E31E24;
+  font-family: "Caveat Brush", sans-serif;
 }
 
 .about {
