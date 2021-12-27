@@ -17,7 +17,7 @@
 }
 
 .title, .about__name, .offer__item-header, .price__item-header, .contact__data-header {
-  color: #E31E24;
+  color: #727271;
   text-transform: uppercase;
   font-family: "Caveat Brush", sans-serif;
   font-size: 60px;
@@ -27,7 +27,7 @@
 
 .btn {
   padding: 15px 35px;
-  background-color: #E31E24;
+  background-color: #727271;
   color: white;
   font-size: 30px;
   border-radius: 40px;
@@ -37,8 +37,8 @@
 
 .btn:hover {
   background-color: white;
-  color: #E31E24;
-  border: 1px solid #E31E24;
+  color: #727271;
+  border: 1px solid #727271;
 }
 
 .text {
@@ -67,7 +67,7 @@
 }
 
 .logo {
-  height: 300px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,8 +77,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-item-align: center;
       align-self: center;
   margin: 0 auto;
@@ -88,12 +86,16 @@
           flex-direction: column;
 }
 
+.logo__belka {
+  height: 20px;
+  width: 100%;
+  background-color: #727271;
+}
+
 .logo__img {
   display: block;
-  height: 85%;
-  margin: 0 auto;
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+  height: 80%;
+  margin: 20px auto;
 }
 
 .logo__menu {
@@ -105,8 +107,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
 }
 
 .logo__menu-link {
@@ -119,8 +119,8 @@
 }
 
 .logo__menu-link:hover {
-  color: #E31E24;
-  border-bottom: 1px solid #E31E24;
+  color: #727271;
+  border-bottom: 1px solid #727271;
 }
 
 @media only screen and (max-width: 480px) {
@@ -152,7 +152,7 @@
 }
 
 .menu__motto-haslo, .bgimg__motto-haslo {
-  color: #E31E24;
+  color: #727271;
   font-family: "Caveat Brush", sans-serif;
 }
 
