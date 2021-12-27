@@ -10,13 +10,14 @@
 
 
 .logo {
-    height: 200px;
+    height: 120px;
+    max-width: 1240px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    align-self: center;
+    justify-content: space-between;
     margin: 0 auto;
-    flex-direction: column;
+   
     
     &__belka{
         height: 20px;
@@ -28,21 +29,21 @@
     &__img{
         display: block;
         height: 80%;
-        margin: 20px auto;
     }
 
     &__menu {
-        width: 550px;
+        width:850px;
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+
     }
 
     &__menu-link {
-        text-transform: uppercase;
+        text-transform: capitalize;
         text-decoration: none;
         color: red;
-        font-size: 18px;
+        font-size: 16px;
         transition: border-bottom 7s ease-in;
 
         &:hover {
@@ -66,31 +67,52 @@
         }
     }}
 
-    .menu {
-        height: 500px;
-        background: url(/img/pins.png) no-repeat center bottom fixed;
-        background-size: cover;
+    .btn-motto{
+      
+        height: 50px;
+        width: 350px;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        margin: 30px 0;
+        font-size: 30px;
+    }
 
+    .menu {
+        height: 800px;
+        background: url(/img/pins.png) no-repeat center top fixed;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
         &__motto {
-            text-transform: uppercase;
+            text-transform: capitalize;
             color: white;
-            font-size: 100px;
+            font-size: 70px;
             text-align: center;
             padding-top: 120px;
 
             &-haslo {
-                color: $maincolor;
+                color: white;
                 font-family: $special_font;
             }
         }
 
         
     }
-
+    .section__about{
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        display: flex;
+    }
     .about {
         margin: 0 auto;
-
+        
         &__container {
+            max-width: 1240px;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -106,8 +128,8 @@
         }
 
         &__img {
-            width: 270px;
-            height: 510px;
+            width: 150px;
+            height: 290px;
         }
 
         &__name {
@@ -127,7 +149,7 @@
 
         &__motto {
             @extend .menu__motto;
-            font-size: 250px;
+            font-size: 150px;
             padding-top: 10%;
 
             @media only screen and (max-width: 480px) {
