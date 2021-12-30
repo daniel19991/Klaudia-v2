@@ -19,15 +19,15 @@
 .title, .about__name, .offer__item-header, .price__item-header, .contact__data-header {
   color: #727271;
   text-transform: uppercase;
-  font-family: "Caveat Brush", sans-serif;
-  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
   font-weight: 500;
   text-align: center;
 }
 
 .btn {
   padding: 15px 35px;
-  background-color: #727271;
+  background-color: #E31E24;
   color: white;
   font-size: 30px;
   border-radius: 40px;
@@ -37,8 +37,8 @@
 
 .btn:hover {
   background-color: white;
-  color: #727271;
-  border: 1px solid #727271;
+  color: #E31E24;
+  border: 1px solid #E31E24;
 }
 
 .text {
@@ -109,7 +109,7 @@
 .logo__menu-link {
   text-transform: capitalize;
   text-decoration: none;
-  color: red;
+  color: #E31E24;
   font-size: 28px;
   -webkit-transition: border-bottom 7s ease-in;
   transition: border-bottom 7s ease-in;
@@ -142,14 +142,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px 0;
+  margin: 60px 0;
   font-size: 30px;
+  line-height: 20px;
 }
 
 .menu {
-  height: 800px;
-  background: url(/img/pins.png) no-repeat center top fixed;
+  height: 480px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black)), url(/img/pins.png) no-repeat center top fixed;
+  background: linear-gradient(black, black), url(/img/pins.png) no-repeat center top fixed;
   background-size: 100%;
+  background-blend-mode: saturation;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,14 +171,28 @@
 .menu__motto, .bgimg__motto {
   text-transform: capitalize;
   color: white;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 10px;
 }
 
 .menu__motto-haslo, .bgimg__motto-haslo {
-  color: white;
-  font-family: "Caveat Brush", sans-serif;
+  color: red;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .menu__motto, .bgimg__motto {
+    text-transform: capitalize;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .menu__motto-haslo, .bgimg__motto-haslo {
+    color: red;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 .section__about {
@@ -235,19 +252,21 @@
 }
 
 .about__name {
-  font-size: 48px;
+  font-size: 40px;
   margin: 0;
 }
 
 .bgimg {
   height: 480px;
-  background: url(/img/pins2.png) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black)), url(/img/pins2.png) no-repeat center center fixed;
+  background: linear-gradient(black, black), url(/img/pins2.png) no-repeat center center fixed;
   background-size: cover;
+  background-blend-mode: saturation;
 }
 
 .bgimg__motto {
-  font-size: 150px;
-  padding-top: 10%;
+  font-size: 120px;
+  padding-top: 5%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -291,7 +310,7 @@
       align-content: flex-start;
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .offer__item-img {
@@ -368,17 +387,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+  width: 215px;
 }
 
 .contact__item-img {
   width: 60px;
   height: 60px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 480px) {

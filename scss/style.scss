@@ -42,7 +42,7 @@
     &__menu-link {
         text-transform: capitalize;
         text-decoration: none;
-        color: red;
+        color: #E31E24;
         font-size: 28px;
         transition: border-bottom 7s ease-in;
 
@@ -74,14 +74,16 @@
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin: 30px 0;
+        margin: 60px 0;
         font-size: 30px;
+        line-height: 20px;
     }
 
     .menu {
-        height: 800px;
-        background: url(/img/pins.png) no-repeat center top fixed;
+        height: 480px;
+        background:linear-gradient(black, black), url(/img/pins.png) no-repeat center top fixed;
         background-size: 100%;
+        background-blend-mode: saturation;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -89,18 +91,36 @@
         &__motto {
             text-transform: capitalize;
             color: white;
-            font-size: 70px;
+            font-size: 60px;
             text-align: center;
-            padding-top: 120px;
+            padding-top: 10px;
 
             &-haslo {
-                color: white;
+                color: red;
                 font-family: $special_font;
             }
         }
 
         
     }
+
+    @media only screen and (max-width: 480px) {
+        .menu {
+            &__motto {
+                text-transform: capitalize;
+                color: white;
+                font-size: 45px;
+                text-align: center;
+                padding-top: 10px;
+    
+                &-haslo {
+                    color: red;
+                    font-family: $special_font;
+                }
+            }
+    
+        }   
+        }
     .section__about{
         margin: 0 auto;
         flex-direction: column;
@@ -134,7 +154,7 @@
 
         &__name {
             @extend .title;
-            font-size: $desc_size;
+            font-size: 40px;
             margin: 0;
         }
 
@@ -144,13 +164,14 @@
 
     .bgimg {
         height: 480px;
-        background: url(/img/pins2.png) no-repeat center center fixed;
+        background:linear-gradient(black, black), url(/img/pins2.png) no-repeat center center fixed;
         background-size: cover;
+        background-blend-mode: saturation;
 
         &__motto {
             @extend .menu__motto;
-            font-size: 150px;
-            padding-top: 10%;
+            font-size: 120px;
+            padding-top: 5%;
 
             @media only screen and (max-width: 480px) {
                 & {
@@ -181,7 +202,7 @@
             flex-direction: column;
             align-content: flex-start;
             flex-basis: 35%;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
 
         }
 
@@ -247,13 +268,16 @@
         &__item{
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-content: center;
             text-align: center;
+            width: 215px;
+            
             
             &-img{
                 width: 60px;
                 height: 60px;
+                align-self: center;
+                margin-bottom: 20px;
             }
         }
 
