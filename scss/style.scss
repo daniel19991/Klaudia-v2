@@ -10,7 +10,7 @@
 
 
 .logo {
-    height: 120px;
+    height: 220px;
     max-width: 1240px;
     display: flex;
     flex-direction: row;
@@ -43,7 +43,7 @@
         text-transform: capitalize;
         text-decoration: none;
         color: red;
-        font-size: 16px;
+        font-size: 28px;
         transition: border-bottom 7s ease-in;
 
         &:hover {
@@ -143,7 +143,7 @@
     }
 
     .bgimg {
-        height: 980px;
+        height: 480px;
         background: url(/img/pins2.png) no-repeat center center fixed;
         background-size: cover;
 
@@ -248,7 +248,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-content: center;
+            text-align: center;
             
             &-img{
                 width: 60px;

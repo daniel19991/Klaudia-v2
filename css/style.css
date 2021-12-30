@@ -67,7 +67,7 @@
 }
 
 .logo {
-  height: 120px;
+  height: 220px;
   max-width: 1240px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,7 +110,7 @@
   text-transform: capitalize;
   text-decoration: none;
   color: red;
-  font-size: 16px;
+  font-size: 28px;
   -webkit-transition: border-bottom 7s ease-in;
   transition: border-bottom 7s ease-in;
 }
@@ -240,7 +240,7 @@
 }
 
 .bgimg {
-  height: 980px;
+  height: 480px;
   background: url(/img/pins2.png) no-repeat center center fixed;
   background-size: cover;
 }
@@ -371,9 +371,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
 }
 
 .contact__item-img {
