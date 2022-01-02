@@ -17,22 +17,22 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-   
-    
-    &__belka{
+
+
+    &__belka {
         height: 20px;
         width: 100%;
         background-color: #727271;
 
     }
-    
-    &__img{
+
+    &__img {
         display: block;
         height: 80%;
     }
 
     &__menu {
-        width:700px;
+        width: 700px;
         list-style: none;
         display: flex;
         justify-content: space-around;
@@ -54,44 +54,82 @@
     }
 
     @media only screen and (max-width: 480px) {
-        .logo{
+        .logo {
             height: 200px;
             width: 480px;
             size: 0.8;
+
             &__menu {
-            display:none;
+                display: none;
             }
         }
+
         .logo__img {
             scale: 0.7;
         }
-    }}
+    }
+}
 
-    .btn-motto{
-      
-        height: 50px;
-        width: 350px;
-        text-decoration: none;
-        text-align: center;
-        justify-content: center;
-        margin: 60px 0;
-        font-size: 30px;
-        line-height: 20px;
+.btn-motto {
+
+    height: 50px;
+    width: 350px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin: 60px 0;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.menu {
+    height: 480px;
+    background: linear-gradient(black, black), url(/img/pins.png) no-repeat center top fixed;
+    background-size: cover;
+    background-blend-mode: saturation;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    &__img {
+        display: none;
     }
 
+    &__motto {
+        text-transform: capitalize;
+        color: white;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 10px;
+
+        &-haslo {
+            color: red;
+            font-family: $special_font;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
     .menu {
-        height: 480px;
-        background:linear-gradient(black, black), url(/img/pins.png) no-repeat center top fixed;
-        background-size: 100%;
-        background-blend-mode: saturation;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
+
+        background-image: none;
+
+        &__img {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            height: 400px;
+            filter: grayscale(100%);
+        }
+
         &__motto {
+            position: absolute;
             text-transform: capitalize;
             color: white;
-            font-size: 60px;
+            font-size: 35px;
             text-align: center;
             padding-top: 10px;
 
@@ -101,198 +139,193 @@
             }
         }
 
-        
     }
 
-    @media only screen and (max-width: 480px) {
-        .menu {
-            &__motto {
-                text-transform: capitalize;
-                color: white;
-                font-size: 45px;
-                text-align: center;
-                padding-top: 10px;
-    
-                &-haslo {
-                    color: red;
-                    font-family: $special_font;
-                }
-            }
-    
-        }   
-        }
-    .section__about{
-        margin: 0 auto;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
+    .btn-motto2 {
+        position: absolute;
+        top: 60%;
+        margin: 0;
+    }
+}
+
+.section__about {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+
+.about {
+    margin: 0 auto;
+
+    &__container {
+        max-width: 1240px;
         display: flex;
-    }
-    .about {
-        margin: 0 auto;
-        
-        &__container {
-            max-width: 1240px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            flex-direction: row;
-
-        }
-
-        &__half {
-            flex-basis: 35%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__img {
-            width: 150px;
-            height: 290px;
-        }
-
-        &__name {
-            @extend .title;
-            font-size: 40px;
-            margin: 0;
-        }
-
-        //button w pliku __global.scss
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
 
     }
 
+    &__half {
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        width: 150px;
+        height: 290px;
+    }
+
+    &__name {
+        @extend .title;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    //button w pliku __global.scss
+
+}
+
+.bgimg {
+    height: 480px;
+    background: linear-gradient(black, black), url(/img/pins2.png) no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: saturation;
+
+    &__motto {
+        @extend .menu__motto;
+        font-size: 120px;
+        padding-top: 5%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .bgimg {
-        height: 480px;
-        background:linear-gradient(black, black), url(/img/pins2.png) no-repeat center center fixed;
-        background-size: cover;
-        background-blend-mode: saturation;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
 
         &__motto {
-            @extend .menu__motto;
-            font-size: 120px;
-            padding-top: 5%;
-
-            @media only screen and (max-width: 480px) {
-                & {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 50px;
-
-                }
-            }
+            font-size: 70px;
 
             &-haslo {
-                @extend .menu__motto-haslo;
+                color: red;
             }
         }
     }
+}
 
-    .offer {
+.offer {
 
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__item {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-        &__item {
-            display: flex;
-            flex-direction: column;
-            align-content: flex-start;
-            flex-basis: 35%;
-            margin-bottom: 50px;
-
-        }
-
-        &__item-img {
-            width: 325px;
-            height: 325px;
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        &__item-header {
-            @extend .title;
-            font-size: 24px;
-            margin: 20px 0;
-            height: 40px;
-        }
-
-        &__title {
-            flex-basis: 100%;
-        }
+        flex-direction: column;
+        align-content: flex-start;
+        flex-basis: 35%;
+        margin-bottom: 50px;
 
     }
 
-    .price {
-
-        &__item-header {
-            @extend .offer__item-header;
-            margin-bottom: 0px;
-        }
-
-        &__item-description {
-            text-align: center;
-
-        }
+    &__item-img {
+        width: 325px;
+        height: 325px;
+        text-align: center;
+        margin: 0 auto;
     }
 
+    &__item-header {
+        @extend .title;
+        font-size: 24px;
+        margin: 20px 0;
+        height: 40px;
+    }
 
-    .contact {
+    &__title {
+        flex-basis: 100%;
+    }
+
+}
+
+.price {
+
+    &__item-header {
+        @extend .offer__item-header;
+        margin-bottom: 0px;
+    }
+
+    &__item-description {
+        text-align: center;
+
+    }
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 40%;
+    justify-content: space-around;
+
+    &__title {
+        flex-basis: 100%;
+    }
+
+    &__data-header {
+        flex-basis: 100%;
+        @extend .offer__item-header;
+        margin: 0;
+    }
+
+    &__data-description {
+        flex-basis: 100%;
+    }
+
+    &__map {
+        display: block;
+        margin-left: 50px;
+    }
+
+    &__item {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-basis: 40%;
-        justify-content: space-around;
-        &__title {
-            flex-basis: 100%;
-        }
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        width: 215px;
 
-        &__data-header {
-            flex-basis: 100%;
-            @extend .offer__item-header;
-            margin: 0;
-        }
 
-        &__data-description {
-            flex-basis: 100%;
-        }
-
-        &__map {
-            display: block;
-            margin-left: 50px;
-        }
-        &__item{
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            text-align: center;
-            width: 215px;
-            
-            
-            &-img{
-                width: 60px;
-                height: 60px;
-                align-self: center;
-                margin-bottom: 20px;
-            }
-        }
-
-    }
-
-    @media only screen and (max-width: 480px) {
-        .contact__map {
-            margin: 0;
-        }
-
-        iframe {
-            width: 400px;
-            height: 520px;
-            margin: 0;
+        &-img {
+            width: 60px;
+            height: 60px;
+            align-self: center;
+            margin-bottom: 20px;
         }
     }
 
-  
+}
+
+@media only screen and (max-width: 480px) {
+    .contact__map {
+        margin: 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: 520px;
+        margin: 0;
+    }
+}
