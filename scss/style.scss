@@ -178,6 +178,7 @@
     &__img {
         width: 150px;
         height: 290px;
+        margin-bottom: 35px;
     }
 
     &__name {
@@ -256,13 +257,14 @@
 
     &__item-header {
         @extend .title;
-        font-size: 24px;
+        font-size: 22px;
         margin: 20px 0;
         height: 40px;
     }
 
     &__title {
         flex-basis: 100%;
+        margin-bottom: 35px;
     }
 
 }

@@ -270,6 +270,7 @@
 .about__img {
   width: 150px;
   height: 290px;
+  margin-bottom: 35px;
 }
 
 .about__name {
@@ -364,7 +365,7 @@
 }
 
 .offer__item-header, .price__item-header, .contact__data-header {
-  font-size: 24px;
+  font-size: 22px;
   margin: 20px 0;
   height: 40px;
 }
@@ -372,6 +373,7 @@
 .offer__title {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-bottom: 35px;
 }
 
 .price__item-header {
