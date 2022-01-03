@@ -97,7 +97,7 @@
     }
 
     &__motto {
-        text-transform: capitalize;
+        text-transform: uppercase;
         color: white;
         font-size: 60px;
         text-align: center;
@@ -186,6 +186,10 @@
         margin: 0;
     }
 
+    &__description{
+        text-align: justify;
+    }
+
     //button w pliku __global.scss
 
 }
@@ -236,6 +240,10 @@
         align-content: flex-start;
         flex-basis: 35%;
         margin-bottom: 50px;
+
+        &-description{
+            text-align: justify;
+        }
 
     }
 

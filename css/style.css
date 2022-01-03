@@ -173,7 +173,7 @@
 }
 
 .menu__motto, .bgimg__motto {
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: white;
   font-size: 60px;
   text-align: center;
@@ -277,6 +277,10 @@
   margin: 0;
 }
 
+.about__description {
+  text-align: justify;
+}
+
 .bgimg {
   height: 480px;
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(black)), url(/img/pins2.png) no-repeat center center fixed;
@@ -346,6 +350,10 @@
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
   margin-bottom: 50px;
+}
+
+.offer__item-description {
+  text-align: justify;
 }
 
 .offer__item-img {
