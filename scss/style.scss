@@ -31,6 +31,17 @@
         height: 80%;
     }
 
+    &__social{
+        list-style: none;
+        &-item{
+            text-decoration: none;
+        }
+        &-img{
+            width: 40px;
+            height:40px;
+        }
+    }
+
     &__menu {
         width: 700px;
         list-style: none;
@@ -52,20 +63,27 @@
 
         }
     }
+}
 
-    @media only screen and (max-width: 480px) {
-        .logo {
-            height: 200px;
-            width: 480px;
-            size: 0.8;
+@media only screen and (max-width: 480px) {
+    .logo {
+           height: 200px;
+           max-width:480px;
+            flex-direction: column;
 
             &__menu {
+                font-size: 10px;
                 display: none;
             }
-        }
+        
 
-        .logo__img {
-            scale: 0.7;
+            &__social {
+                display: flex;
+                flex-direction: row;
+
+                &-item{
+                    margin:10px 10px;
+                }
         }
     }
 }
@@ -77,13 +95,12 @@
     text-decoration: none;
     text-align: center;
     justify-content: center;
-    margin: 60px 0;
+    margin: 100px 0;
     font-size: 30px;
     line-height: 20px;
 }
 
 .menu {
-    height: 480px;
     background: linear-gradient(black, black), url(/img/pins.png) no-repeat center top fixed;
     background-size: cover;
     background-blend-mode: saturation;
@@ -143,7 +160,7 @@
 
     .btn-motto2 {
         position: absolute;
-        top: 60%;
+        top: 45%;
         margin: 0;
     }
 }
