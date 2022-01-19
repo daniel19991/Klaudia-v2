@@ -159,6 +159,9 @@
   .logo__social-item {
     margin: 10px 10px;
   }
+  .logo__img {
+    scale: 0.8;
+  }
 }
 
 .btn-motto {
