@@ -63,6 +63,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -145,7 +146,17 @@
   }
   .logo__menu {
     font-size: 10px;
-    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .logo__menu-link {
+    font-size: 14px;
   }
   .logo__social {
     display: -webkit-box;
@@ -160,7 +171,7 @@
     margin: 10px 10px;
   }
   .logo__img {
-    scale: 0.8;
+    scale: 0.99999;
   }
 }
 
