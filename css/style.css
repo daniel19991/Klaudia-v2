@@ -136,8 +136,8 @@
 
 @media only screen and (max-width: 480px) {
   .logo {
-    height: 220px;
-    max-width: 480px;
+    height: 100%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -156,7 +156,7 @@
     margin: 20px 0;
   }
   .logo__menu-link {
-    font-size: 10px;
+    font-size: 14px;
   }
   .logo__social {
     display: -webkit-box;
@@ -171,7 +171,7 @@
     margin: 10px 10px;
   }
   .logo__img {
-    scale: 0.99999;
+    max-width: 90%;
   }
 }
 
