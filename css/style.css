@@ -171,7 +171,7 @@
     margin: 10px 10px;
   }
   .logo__img {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -317,6 +317,12 @@
   text-align: justify;
 }
 
+@media only screen and (max-width: 480px) {
+  .about__half {
+    width: 325px;
+  }
+}
+
 .bgimg {
   height: 480px;
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(black)), url(/img/pins2.png) no-repeat center center fixed;
@@ -401,8 +407,7 @@
 
 .offer__item-header, .price__item-header, .contact__data-header {
   font-size: 22px;
-  margin: 20px 0;
-  height: 40px;
+  margin: 27px 0 20px 0;
 }
 
 .offer__title {

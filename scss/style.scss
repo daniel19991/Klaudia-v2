@@ -95,7 +95,7 @@
                 }
         }
     &__img{
-        max-width: 90%;
+        max-width: 100%;
     }
     }
 }
@@ -222,6 +222,12 @@
 
 }
 
+@media only screen and (max-width: 480px) {
+    .about{
+        &__half{
+            width: 325px;
+        }
+    }}
 .bgimg {
     height: 480px;
     background: linear-gradient(black, black), url(/img/pins2.png) no-repeat center center fixed;
@@ -285,8 +291,7 @@
     &__item-header {
         @extend .title;
         font-size: 22px;
-        margin: 20px 0;
-        height: 40px;
+        margin: 27px 0 20px 0;
     }
 
     &__title {
